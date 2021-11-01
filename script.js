@@ -21,8 +21,3 @@ for (i = 1; i <= 256; i++) {
   a.classList.add("grid");
   container.appendChild(a);
 }
-
-// How to make sure they will be perfectly squared? 
-//  - set specific height and width on the container, which will be 800px x 800px
-//  - So each square will have dimensions of 50px and 50px 
-// The "container" will be a flexbox. Allow flex wrap.

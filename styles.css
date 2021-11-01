@@ -1,0 +1,14 @@
+.container {
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  border: dotted black 1px;
+  box-sizing: border-box; /* With border-box, the border-width and content width of square divs
+  will both scale correctly when a page is zoomed in and out. */
+  width: 6.25%;
+}
