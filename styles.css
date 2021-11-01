@@ -2,10 +2,16 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.reset-button {
+  padding: 4px 20px;
+  margin-bottom: 20px;
+
+}
 /* Because the project instructions said that the grid "should be generated
  in the same total space as before", it was a hint that the container needs
  to have a fixed width and height. 500px chosen arbitrarily. */
@@ -23,3 +29,4 @@ we need the divs to wrap onto multiple lines. */
   box-sizing: border-box; /* Needed for correct size scaling when page is zoomed in 'n out.*/
   width: 6.25%; /* Take the reciprocal of the # of squares on the side x 100%. */
 }
+

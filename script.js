@@ -65,3 +65,12 @@ function OnMouseUp() {
 // That is, remove the 'mouseenter' event listener when the click is released anywhere
 // on the document.
 document.addEventListener('mouseup', OnMouseUp);
+
+const button = document.querySelector("button");
+button.addEventListener('click', CreateNewGrid);
+
+function CreateNewGrid() {
+  squarediv.forEach(element => {
+    element.style.backgroundColor = "white";
+  });
+};
