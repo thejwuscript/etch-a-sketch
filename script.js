@@ -19,7 +19,9 @@ for (i = 1; i <= 256; i++) {
   a = document.createElement("div");
   a.classList.add("grid");
   container.appendChild(a);
-}
+  }
+
+
 
 // Need a reference to all square divs
 function AddListeners() {
@@ -70,12 +72,6 @@ function AddListeners() {
 
 AddListeners();
 
-const button = document.querySelector("button");
-
-button.addEventListener('click', CreateNewGrid);
-
-
-
 function CreateNewGrid() {
   const squarediv = document.querySelectorAll("div.grid");
   squarediv.forEach(element => {
@@ -96,3 +92,6 @@ function CreateNewGrid() {
   }
   AddListeners();
 }
+
+const button = document.querySelector("button");
+button.addEventListener('click', CreateNewGrid);
