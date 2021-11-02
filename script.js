@@ -19,7 +19,7 @@ for (i = 1; i <= 256; i++) {
   a = document.createElement("div");
   a.classList.add("grid");
   container.appendChild(a);
-  }
+}
 
 
 
@@ -80,7 +80,11 @@ function CreateNewGrid() {
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   };
-  let squaresperside = prompt("Enter the number of squares per side", "");
+
+  let squaresperside = prompt("Enter the desired number of squares per side (max: 100)", "");
+  while (squaresperside > 100) {
+    squaresperside = prompt("Exceeded the limit. Please try again.\nEnter the desired number of squares per side (max: 100)")
+  }
 
   for (i = 1; i <= squaresperside ** 2; i++) {
     let a = "div" + i;

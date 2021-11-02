@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+h1 {
+  font-family: 'Pacifico', cursive, sans-serif;
+  font-size: 68px;
+  margin: 0;
+}
 /* To make the grid placed at the center of the page */
 body {
   height: 100vh;
